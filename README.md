@@ -2,7 +2,7 @@
 
 Esta aplicação é um e-commerce que esta sendo desenvolvido com a finalidade de aprendizado na Mentoria Angular Pro 2.0 🚀
 
-## Tecnologias utilizadas e Versões necessárias
+## 🛠️Tecnologias utilizadas e Versões necessárias
 
 <a alt="Nx logo" href="https://nx.dev" target="_blank" rel="noreferrer"><img src="https://raw.githubusercontent.com/nrwl/nx/master/images/nx-logo.png" width="45"></a>
 
@@ -29,7 +29,7 @@ npx nx serve
 
 O projeto será servido por padrão em http://localhost:4200/
 
-## Executar tarefas independentes 👩‍💻
+## 👩‍💻 Executar tarefas independentes
 
 ```
 npx nx <NOME_DA_TAREFA> <NOME_DO_MODULO>
@@ -42,7 +42,7 @@ npx nx test projectecommerce
 npx nx lint modules-layout
 ```
 
-## Visualizar Dependency Graph
+## 📈 Visualizar Dependency Graph
 
 ```
 npx nx graph
