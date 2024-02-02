@@ -10,9 +10,7 @@ Este workspace foi gerado [Nx, a Smart, fast and extensible build system.](https
 
 - NX - 17.2.8
 - Angular - 17.0.0
-- RXJS - 7.8.0
 - Node - 20.10.0
-- Typescript
 - Angular Material
 
 ## 🚀 Iniciar o projeto localmente
