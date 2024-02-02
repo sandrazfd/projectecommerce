@@ -13,6 +13,14 @@ Este workspace foi gerado [Nx, a Smart, fast and extensible build system.](https
 - Node - 20.10.0
 - Angular Material
 
+## Clonar o projeto
+
+```
+git clone https://github.com/sandrazfd/projectecommerce.git
+cd projectecommerce
+npm install
+```
+
 ## 🚀 Iniciar o projeto localmente
 
 ```
