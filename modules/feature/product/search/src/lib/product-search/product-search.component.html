@@ -11,9 +11,11 @@
       [matAutocomplete]="auto"
     />
     <mat-autocomplete requireSelection #auto="matAutocomplete">
-      @for (product of products$ | async; track product.id) {
+      @for (product of products$ | async ; track product.id) {
       <mat-option [value]="product.name">{{ product.name }}</mat-option>
       }
     </mat-autocomplete>
   </mat-form-field>
 </form>
+
+<!-- | async para executar o subscribe , qdo o componente for destruido ela tb vai ser desinscrita -->

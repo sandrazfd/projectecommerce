@@ -6,11 +6,10 @@ import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatInputModule } from '@angular/material/input';
 import { ProductSearchService } from '@projectecommerce/product-data-access';
 import { Product } from 'modules/data-access/product/src/lib/models/product.model';
+
 import {
   Observable,
-  debounceTime,
-  distinctUntilChanged,
-  filter,
+  debounceTime, distinctUntilChanged, filter,
   switchMap,
 } from 'rxjs';
 
@@ -28,17 +27,18 @@ import {
   styleUrl: './product-search.component.scss',
 })
 export class ProductSearchComponent implements OnInit {
-  control = new FormControl('', { nonNullable: true });
-  products$!: Observable<Product[]>;
+  control = new FormControl('',{nonNullable:true});
+  products$!:Observable <Product[]>
 
   constructor(private productSearchService: ProductSearchService) {}
 
   ngOnInit() {
-    this.products$ = this.control.valueChanges.pipe(
+   this.products$= this.control.valueChanges.pipe(
       debounceTime(500),
       distinctUntilChanged(),
-      filter((text) => text.length > 1),
-      switchMap((text) => this.productSearchService.searchByName(text))
-    );
+      filter(text => text.length > 0),
+      switchMap((text)=> this.productSearchService.searchByName(text))
+      
+    )
   }
 }

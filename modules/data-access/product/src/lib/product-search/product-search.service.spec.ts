@@ -1,9 +1,6 @@
 import { TestBed } from '@angular/core/testing';
 
-import {
-  HttpClientTestingModule,
-  HttpTestingController,
-} from '@angular/common/http/testing';
+import { HttpClientTestingModule, HttpTestingController } from '@angular/common/http/testing';
 import { mockProducts } from '../mocks/product.mock';
 import { Product } from '../models/product.model';
 import { ProductSearchService } from './product-search.service';
