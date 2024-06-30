@@ -20,6 +20,9 @@
       "@projectecommerce/product-data-access": [
         "modules/data-access/product/src/index.ts"
       ],
+      "@projectecommerce/product-detail": [
+        "modules/feature/product/detail/src/index.ts"
+      ],
       "@projectecommerce/product-search": [
         "modules/feature/product/search/src/index.ts"
       ],
