@@ -1,12 +1,12 @@
 import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
-import { MatCardModule } from '@angular/material/card';
 import { RecommendedProductsService } from '@projectecommerce/product-data-access';
+import { ProductCardComponent } from '@projectecommerce/product-ui';
 
 @Component({
   selector: 'projectecommerce-home',
   standalone: true,
-  imports: [CommonModule, MatCardModule],
+  imports: [CommonModule, ProductCardComponent],
   templateUrl: './home.component.html',
   styleUrl: './home.component.scss',
 })
